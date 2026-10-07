@@ -11,6 +11,7 @@ import { PortfolioSection } from './components/sections/PortfolioSection';
 import { IndustriesSection } from './components/sections/IndustriesSection';
 import { AboutSection } from './components/sections/AboutSection';
 import { FAQSection } from './components/sections/FAQSection';
+import { BlogSection } from './components/sections/BlogSection';
 import { CTASection } from './components/sections/CTASection';
 import { Footer } from './components/footer/Footer';
 import { ConsultationModal } from './components/modals/ConsultationModal';
@@ -108,10 +109,13 @@ export function App() {
         {/* ── 11. FAQ (White) ─────────────────────────────────────────── */}
         <FAQSection onOpenConsultation={handleOpenConsultation} />
 
-        {/* wave: faq (white) → cta (neon/slate-900) */}
+        {/* wave: faq (white) → blog/cta (neon/slate-900) */}
         <WaveDivider variant="tilt"  fill="#0F172A" bg="#FFFFFF" />
 
-        {/* ── 12. CTA (Neon) ─────────────────────────────────────────── */}
+        {/* ── 12. BLOG (Slate-900) ──────────────────────────────────── */}
+        <BlogSection onOpenConsultation={handleOpenConsultation} />
+
+        {/* ── 13. CTA (Slate-900) ───────────────────────────────────── */}
         <CTASection onOpenConsultation={handleOpenConsultation} />
 
         {/* wave: cta (neon/slate-900) → footer (emerald) */}

@@ -7,7 +7,7 @@ interface CTASectionProps {
 
 export const CTASection: React.FC<CTASectionProps> = ({ onOpenConsultation }) => {
   return (
-    <section className="py-24 bg-slate-900 relative overflow-hidden">
+    <section id="kontak" className="py-24 bg-slate-900 relative overflow-hidden scroll-mt-24">
       
       {/* BACKGROUND GLOW */}
       <div className="absolute inset-0 bg-radial-emerald opacity-60 pointer-events-none animate-glow-pulse"></div>

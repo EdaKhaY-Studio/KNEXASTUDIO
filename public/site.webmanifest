@@ -1,0 +1,21 @@
+{
+  "name": "KNEXU STUDIO — Studio Digital & AI Agent",
+  "short_name": "KNEXU STUDIO",
+  "description": "Website Cerdas, Bisnis Naik Kelas. Studio Digital berbasis di Meulaboh, Aceh Barat.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#064e3b",
+  "background_color": "#064e3b",
+  "display": "standalone",
+  "start_url": "/"
+}

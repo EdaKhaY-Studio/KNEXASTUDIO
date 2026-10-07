@@ -15,11 +15,11 @@ interface HeroSectionProps {
 
 // ── Typing animation hook ─────────────────────────────────────────────────
 const TYPING_WORDS = [
-  'Website Profesional',
-  'Agen AI 24/7',
-  'Landing Page',
-  'Company Profile',
-  'Web Sekolah',
+  'Landing Page Konversi',
+  'Website Company Profile',
+  'Agen AI Customer Service 24/7',
+  'Website Sekolah & Travel',
+  'Toko Online Otomatis',
 ];
 
 function useTyping(words: string[], speed = 80, pause = 1800) {
@@ -92,7 +92,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
   return (
     <section
       id="beranda"
-      className="relative min-h-screen flex items-center pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-emerald-900 text-white"
+      className="relative min-h-screen flex items-center pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-emerald-900 text-white scroll-mt-24"
     >
       {/* ── Background grid & subtle glow ── */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -124,37 +124,41 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) 
             className="flex flex-col items-center lg:items-start text-center lg:text-left pt-8 sm:pt-12 lg:pt-0"
           >
             {/* Top badge */}
-            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-emerald-800/50 border border-emerald-700 text-emerald-100 text-[10px] sm:text-xs font-mono mb-6 sm:mb-8 shadow-sm backdrop-blur-sm">
+            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-emerald-800/50 border border-emerald-700 text-emerald-100 text-[10px] sm:text-xs font-mono mb-5 sm:mb-6 shadow-sm backdrop-blur-sm">
               <span className="relative flex h-2 sm:h-2.5 w-2 sm:w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-emerald-400"></span>
               </span>
-              <span>TERSEDIA UNTUK PROJECT BARU — 2026</span>
+              <span>STUDIO DIGITAL & AGEN AI MEULABOH — TERIMA PROJECT 2026</span>
             </motion.div>
 
-            {/* Main headline */}
-            <motion.div variants={fadeUp} className="mb-5">
+            {/* Main headline - Tagline Juara */}
+            <motion.div variants={fadeUp} className="mb-4">
               <h1 className="font-heading font-black text-[2.6rem] sm:text-6xl lg:text-[4.2rem] xl:text-[4.8rem] text-white tracking-tight leading-[1.06]">
-                Transformasi Bisnis Anda dengan{' '}
-                {/* Typing animated word */}
+                Website Cerdas,{' '}
                 <span className="relative block mt-1">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-emerald-200 to-white">
-                    {typedText}
+                    Bisnis Naik Kelas.
                   </span>
-                  {/* Cursor blink */}
-                  <span className="inline-block w-[3px] h-[0.85em] bg-emerald-300 ml-1 align-middle animate-[blink_1s_step-end_infinite]" />
                 </span>
               </h1>
+            </motion.div>
+
+            {/* Dynamic specialty ticker */}
+            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-800/40 border border-emerald-700/60 text-emerald-200 text-xs sm:text-sm font-mono mb-6 backdrop-blur-sm">
+              <span className="text-emerald-400 font-bold">Spesialis:</span>
+              <span className="text-white font-semibold">{typedText}</span>
+              <span className="inline-block w-[2px] h-[1em] bg-emerald-400 align-middle animate-[blink_1s_step-end_infinite]" />
             </motion.div>
 
             {/* Sub-copy */}
             <motion.p
               variants={fadeUp}
-              className="text-base sm:text-lg text-emerald-100/80 leading-relaxed max-w-xl mb-8"
+              className="text-base sm:text-lg text-emerald-100/85 leading-relaxed max-w-xl mb-8"
             >
               Solusi digital terlengkap untuk{' '}
               <strong className="text-white font-semibold">Landing Page, Company Profile, hingga Web Sekolah</strong>.
-              {' '}Setiap paket sudah dilengkapi asisten AI pintar yang melayani pelanggan Anda 24/7.
+              {' '}Setiap paket sudah dilengkapi <strong className="text-emerald-300 font-semibold">Asisten AI 24/7 & Optimasi SEO Google</strong> dalam satu harga hemat terima beres.
             </motion.p>
 
             {/* CTA Buttons */}

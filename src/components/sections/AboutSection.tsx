@@ -5,7 +5,7 @@ import { slideLeft, slideRight, staggerContainer, staggerChild, fadeUp, VIEWPORT
 
 export const AboutSection: React.FC = () => {
   return (
-    <section id="tentang" className="py-24 bg-emerald-900 relative overflow-hidden text-white">
+    <section id="tentang" className="py-24 bg-emerald-900 relative overflow-hidden text-white scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">

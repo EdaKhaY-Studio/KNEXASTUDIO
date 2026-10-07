@@ -87,7 +87,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
   const selectedService = servicesData.find(s => s.id === activeServiceId) || servicesData[0];
 
   return (
-    <section id="layanan" className="py-24 bg-slate-900 relative overflow-hidden text-white">
+    <section id="layanan" className="py-24 bg-slate-900 relative overflow-hidden text-white scroll-mt-24">
       
       {/* TOP TICKER BANNER */}
       <div className="w-full bg-emerald-900/40 border-y border-emerald-500/20 py-3 mb-20 overflow-hidden font-mono text-xs text-emerald-400 font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(16,185,129,0.15)]">
